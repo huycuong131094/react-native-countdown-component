@@ -70,7 +70,7 @@ class CountDown extends React.Component {
     ) {
       this.setState({
         lastUntil: prevState.until,
-        until: Math.max(prevProps.until, 0),
+        until: Math.max(this.props.until, 0),
       });
     }
   }
